@@ -19,7 +19,7 @@ var path = require('path');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname, '../../client/public/index.html'));
+	res.sendFile(path.join(__dirname, '../../client/index.html'));
 });
 
 // POST Route
@@ -80,5 +80,4 @@ router.put('/update-feedBack/:id', (req, res) => {
 	});
 });
 
-// Export this function this for the server connection to take hold.
 module.exports = router;
